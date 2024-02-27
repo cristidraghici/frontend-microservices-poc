@@ -1,0 +1,28 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 2rem;
+  height: calc(50vh - 20px); /* Set height to 50% of viewport height */
+  margin: 10px;
+
+  overflow: scroll;
+}
+
+section:nth-child(even) {
+  background-color: #2ecc71;
+}
