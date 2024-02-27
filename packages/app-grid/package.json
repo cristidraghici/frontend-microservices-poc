@@ -1,0 +1,22 @@
+{
+  "name": "app-grid",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "cristi <cristi@draghici.net>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/app-grid.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/app-grid.test.js"
+  },
+  "dependencies": {
+    "common-state": "file:../common-state"
+  }
+}

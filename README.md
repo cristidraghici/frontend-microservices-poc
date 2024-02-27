@@ -69,6 +69,28 @@ We will create the base and move to yarn, since it known for being faster than n
 - `rm package-lock.json`
 - `yarn install`
 
+Now we will create the packages:
+
+- `npx lerna create app-grid -y`
+- `npx lerna create app-image -y`
+- `npx lerna create app-list -y`
+- `npx lerna create app-text -y`
+- `npx lerna create common-state -y`
+- `npx lerna create shell -y`
+
+Then, inside each of the packages except `common-state` we will append the first dependency in a lerna format:
+
+```json
+{
+  ...
+  "dependencies": {
+    "common-state": "file:../common-state"
+  }
+}
+```
+
+Once this is done, you need to run `yarn install` again.
+
 Read more:
 
 - [https://lerna.js.org/docs/getting-started](https://lerna.js.org/docs/getting-started)
