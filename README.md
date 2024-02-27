@@ -78,7 +78,7 @@ Now we will create the packages:
 - `npx lerna create common-state -y`
 - `npx lerna create shell -y`
 
-Then, inside each of the packages except `common-state` we will append the first dependency in a lerna format:
+Then, `app-list` and `shell` we will append the first dependency in a lerna format:
 
 ```json
 {
@@ -96,3 +96,7 @@ Read more:
 - [https://lerna.js.org/docs/getting-started](https://lerna.js.org/docs/getting-started)
 - [https://www.velotio.com/engineering-blog/scalable-front-end-with-lerna-yarn-react](https://www.velotio.com/engineering-blog/scalable-front-end-with-lerna-yarn-react)
 - [https://github.com/vuestorefront/vue-storefront/blob/main/lerna.json](https://github.com/vuestorefront/vue-storefront/blob/main/lerna.json)
+
+### Add functionality to the sub apps
+
+In this step, we will create the four apps. For the sake of simplicity, we will use the same solution: vite as a bundler, with react and typescript. It will be the base project in all cases. So, in each of the folders of the apps, we will run the command `npx create-vite .`, overwrite the content and the create the minimal apps inside each of the apps.
