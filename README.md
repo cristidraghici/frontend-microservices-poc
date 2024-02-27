@@ -100,3 +100,5 @@ Read more:
 ### Add functionality to the sub apps
 
 In this step, we will create the four apps. For the sake of simplicity, we will use the same solution: vite as a bundler, with react and typescript. It will be the base project in all cases. So, in each of the folders of the apps, we will run the command `npx create-vite .`, overwrite the content and the create the minimal apps inside each of the apps.
+
+The next step we will do is remove most of the boilerplate in each of the projects and then add the minimal functionality needed.
