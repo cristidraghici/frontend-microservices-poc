@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import EventBus from "common-state";
-import "./App.css";
+import "./App.scss";
 
 import { DEFAULT_LIST } from "./constants";
 
@@ -14,11 +14,13 @@ function App() {
   }, []);
 
   return (
-    <ul>
-      {list.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
+    <div className="AppList">
+      <ul>
+        {list.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

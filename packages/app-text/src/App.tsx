@@ -1,8 +1,8 @@
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
-    <>
+    <div className="AppText">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         efficitur, lectus vel eleifend condimentum, sem felis eleifend lacus, at
@@ -1247,7 +1247,7 @@ function App() {
         at mollis libero lacinia non. Quisque ultrices non nisl in mattis. Nulla
         sed diam nec metus vehicula molestie sed.
       </p>
-    </>
+    </div>
   );
 }
 

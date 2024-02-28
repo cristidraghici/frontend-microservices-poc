@@ -4,7 +4,7 @@ import EventBus from "common-state";
 
 import { APP_INFO } from "./config";
 
-import "./App.css";
+import "./App.scss";
 
 const App: FunctionComponent = () => {
   useEffect(() => {
@@ -21,7 +21,7 @@ const App: FunctionComponent = () => {
   }, []);
 
   return (
-    <div className="wrapper">
+    <div className="Shell">
       {APP_INFO.map((app) => (
         <MicroFrontendContainer
           className="MicroFrontend"

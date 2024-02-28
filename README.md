@@ -112,3 +112,7 @@ Since we are dividing the screen in 4 separate sections, **we will assume** that
 ### Share state between apps
 
 We will use an event bus solution for sharing the state. It's a very simple approach, but which comes with the disadvantage that all apps need to be already loaded when an event happens. However, it fits our use case, and given the time constraint, we will move forward with the implementation of other features.
+
+### Implement minimal styling
+
+The main purpose of this exercise is not design and looks, but functionality. However, we are frontend developers, so we know this aspect is very important. To solve the matter of separate styling, we will use sass to wrap all the styling in the application. This is one aspect that must be enforced during development, but it's one of the risks of this implementation, given that if we write styles outside this wrapper, we might change more than we intend.

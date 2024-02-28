@@ -1,0 +1,27 @@
+.AppGrid {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 0.8rem;
+      text-align: left;
+      border: 1px solid #bdc3c7;
+    }
+
+    th {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #ecf0f1;
+    }
+  }
+}
