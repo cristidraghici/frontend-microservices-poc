@@ -12,9 +12,11 @@
     "lint": "lerna run lint",
     "start": "lerna run start",
     "shell-dev": "lerna run dev --scope shell",
-    "shell-apps": "yarn build-apps && npx serve --cors -s ./packages"
+    "shell-apps": "yarn build-apps && npx serve --cors -s ./packages",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^8.0.0",
     "lerna": "^8.1.2"
   }
 }

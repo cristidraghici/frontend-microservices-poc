@@ -121,4 +121,7 @@ The main purpose of this exercise is not design and looks, but functionality. Ho
 
 Our application is rather simple, so basic unit testing should do the trick. A next level might be adding some e2e tests. For now, we will use `vitest` and set it up in all our vite/react applications.
 
-With this occasion we will also add husky to test and lint our projects before committing and pushing to the remote.
+With this occasion we will also add husky to test and lint our projects before committing and pushing to the remote:
+
+- `yarn add -D husky --ignore-workspace-root-check`
+- `npx husky-init && yarn`
