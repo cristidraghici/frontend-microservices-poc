@@ -1,14 +1,23 @@
+import { FunctionComponent } from "react";
+import MicroFrontendContainer from "./components/MicroFrontendContainer";
+
+import { APP_INFO } from "./config";
+
 import "./App.css";
 
-function App() {
+const App: FunctionComponent = () => {
   return (
     <div className="wrapper">
-      <section>grid</section>
-      <section>text</section>
-      <section>image</section>
-      <section>list</section>
+      {APP_INFO.map((app) => (
+        <MicroFrontendContainer
+          className="MicroFrontend"
+          key={app.id}
+          id={app.id}
+          url={app.url}
+        />
+      ))}
     </div>
   );
-}
+};
 
 export default App;

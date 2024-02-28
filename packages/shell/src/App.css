@@ -1,28 +1,24 @@
 body, html {
   margin: 0;
-  height: 100%;
+  padding: 0
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 100%;
+  height: 100vh;
 }
 
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.MicroFrontend {
   background-color: #3498db;
   color: #fff;
-  font-size: 2rem;
   height: calc(50vh - 20px); /* Set height to 50% of viewport height */
-  margin: 10px;
+  margin: 10px !important;
 
   overflow: scroll;
 }
 
-section:nth-child(even) {
+.MicroFrontend:nth-child(even) {
   background-color: #2ecc71;
 }

@@ -106,3 +106,5 @@ The next step we will do is remove most of the boilerplate in each of the projec
 ### Create the shell application
 
 We will start with `npx create-vite .` inside `./packages/shell`, as we did for the other projects. Then we will do the same cleanup and add minimal CSS to separate the page into the four sections we want to display.
+
+Since we are dividing the screen in 4 separate sections, **we will assume** that these sections will always be present and they are the only sections which can be shown in the application.

@@ -1,4 +1,4 @@
-import PuppyJPG from "/puppy.jpg";
+import PuppyJPG from "./assets/puppy.jpg";
 import "./App.css";
 
 function App() {
