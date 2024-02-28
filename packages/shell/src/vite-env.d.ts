@@ -4,4 +4,5 @@ declare module "common-state";
 type AppEntry = {
   id: string;
   url: string;
+  version?: string;
 };

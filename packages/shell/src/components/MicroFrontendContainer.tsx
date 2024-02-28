@@ -8,11 +8,19 @@ import getAssetsFromManifest from "../utils/getAssetsFromManifest";
 const MicroFrontendContainer: FC<AppEntry & ComponentProps<"div">> = ({
   id,
   url,
+  version,
   ...rest
 }) => {
-  const [text, error, loading] = useFetch<string>(url);
+  const urlWithVersion = version
+    ? url.split("/dist/").join(`/dist-${version}/`)
+    : url;
 
-  const assets = useMemo(() => getAssetsFromManifest(url, text), [url, text]);
+  const [text, error, loading] = useFetch<string>(urlWithVersion);
+
+  const assets = useMemo(
+    () => getAssetsFromManifest(urlWithVersion, text),
+    [urlWithVersion, text]
+  );
 
   if (loading) {
     return <div {...rest}>Loading {id}</div>;

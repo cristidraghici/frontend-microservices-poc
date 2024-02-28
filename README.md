@@ -132,3 +132,14 @@ With this occasion we will also add husky to test and lint our projects before c
 
 - `yarn add -D husky --ignore-workspace-root-check`
 - `npx husky-init && yarn`
+
+### Using different versions
+
+We will accomplish this by creating custom `./dist` folders. So, a custom version will be stored in `./dist-1.0.2-prerelease`. To accomplish this, will use the `--outDir` param provided by the vite bundler:
+
+- `yarn build --outDir=dist-<custom-name>` - if we want to run the command from inside the package's folder;
+- `yarn build -- -- --outDir=dist-1.0.2` - in the root folder, to build a custom version for all packages which have the build command.
+
+**Important notice**: remember to prefix your outDir with `dist-`, otherwise it will not be loaded.
+
+The git configuration in the packages will ignore anything that starts with `dist-` and you are not bound to follow the semver convention.

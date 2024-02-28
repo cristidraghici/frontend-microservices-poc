@@ -22,12 +22,13 @@ const App: FunctionComponent = () => {
 
   return (
     <div className="Shell">
-      {APP_INFO.map((app) => (
+      {APP_INFO.map(({ id, url, version }) => (
         <MicroFrontendContainer
           className="MicroFrontend"
-          key={app.id}
-          id={app.id}
-          url={app.url}
+          key={id}
+          id={id}
+          url={url}
+          version={version}
         />
       ))}
     </div>
