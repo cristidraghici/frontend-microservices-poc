@@ -1,7 +1,6 @@
-export const APP_INFO = [
+export const APP_INFO: AppEntry[] = [
   {
     id: "grid",
-    version: "2.0.0",
     url: "http://localhost:3000/app-grid/dist/manifest.json",
   },
   {
