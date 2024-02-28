@@ -1,7 +1,28 @@
 'use strict';
 
-module.exports = commonState;
+class EventBus {
+  constructor() {
+    if (!window.EventBus) {
+      this.subscribers = {};
+      window.EventBus = this;
+    }
 
-function commonState() {
-  return 'Hello from commonState';
+    return window.EventBus;
+
+  }
+
+  subscribe(eventType, callback) {
+    if (!this.subscribers[eventType]) {
+      this.subscribers[eventType] = [];
+    }
+    this.subscribers[eventType].push(callback);
+  }
+
+  publish(eventType, data) {
+    if (this.subscribers[eventType]) {
+      this.subscribers[eventType].forEach(callback => callback(data));
+    }
+  }
 }
+
+export default new EventBus();
