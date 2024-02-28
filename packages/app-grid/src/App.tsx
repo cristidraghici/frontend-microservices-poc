@@ -17,6 +17,7 @@ const App: FunctionComponent = () => {
           "https://jsonplaceholder.typicode.com/users"
         );
         const data = await response.json();
+        console.log(data);
         setUsers(data);
       } catch (error) {
         console.error("Error fetching data:", error);

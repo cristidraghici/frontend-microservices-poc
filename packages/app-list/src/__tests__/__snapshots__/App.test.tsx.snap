@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > should test a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="AppList"
+  >
+    <ul>
+      <li>
+        Default item 1
+      </li>
+      <li>
+        Default item 2
+      </li>
+      <li>
+        Default item 3
+      </li>
+      <li>
+        Default item 4
+      </li>
+      <li>
+        Default item 5
+      </li>
+      <li>
+        Default item 6
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

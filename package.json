@@ -8,7 +8,8 @@
     "clean": "lerna clean",
     "build": "lerna run build",
     "build-apps": "lerna run build --scope app-*",
-    "test": "lerna run test",
+    "test:ci": "lerna run test:ci",
+    "lint": "lerna run lint",
     "start": "lerna run start",
     "shell-dev": "lerna run dev --scope shell",
     "shell-apps": "yarn build-apps && npx serve --cors -s ./packages"

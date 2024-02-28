@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > should test a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Shell"
+  >
+    <div
+      class="MicroFrontend"
+    >
+      Loading grid
+    </div>
+    <div
+      class="MicroFrontend"
+    >
+      Loading text
+    </div>
+    <div
+      class="MicroFrontend"
+    >
+      Loading image
+    </div>
+    <div
+      class="MicroFrontend"
+    >
+      Loading list
+    </div>
+  </div>
+</DocumentFragment>
+`;

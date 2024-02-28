@@ -116,3 +116,9 @@ We will use an event bus solution for sharing the state. It's a very simple appr
 ### Implement minimal styling
 
 The main purpose of this exercise is not design and looks, but functionality. However, we are frontend developers, so we know this aspect is very important. To solve the matter of separate styling, we will use sass to wrap all the styling in the application. This is one aspect that must be enforced during development, but it's one of the risks of this implementation, given that if we write styles outside this wrapper, we might change more than we intend.
+
+### Setup unit tests with vitest
+
+Our application is rather simple, so basic unit testing should do the trick. A next level might be adding some e2e tests. For now, we will use `vitest` and set it up in all our vite/react applications.
+
+With this occasion we will also add husky to test and lint our projects before committing and pushing to the remote.
