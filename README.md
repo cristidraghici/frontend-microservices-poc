@@ -2,6 +2,13 @@
 
 > An architecture of frontend microservices at runtime without webpack module federation, single-spa etc.
 
+## How to run
+
+- Clone the repo, obviously! 😺
+- `yarn install`
+- `yarn shell-apps`
+- `yarn shell-dev`
+
 ## Basic requirements
 
 - Design and implement a web application consisting of several sub-applications to be loaded into the main application at runtime;
